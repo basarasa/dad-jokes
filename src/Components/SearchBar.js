@@ -5,28 +5,28 @@ import axios from 'axios';
 const SearchBar = ({ setResults }) => { 
     const [input, setInput] = useState('');
 
-    const apiLink = "https://icanhazdadjoke.com/";
+    const apiLink = "https://icanhazdadjoke.com/search";
 
     const fetchData = async (keyword) => {
         try {
             const res = await axios.get(apiLink, {
-                headers: { Accept: "application/json" }
-               
+                headers: { Accept: "application/json" },
+                params: { term: keyword, limit: 30 } // Search for the keyword and limit to 30 results
             });
-            if (res.data.joke.toLowerCase().includes(keyword.toLowerCase())) {
-                setResults([res.data.joke]); 
-            } else {
-                setResults([]);
-            }
+            setResults(res.data.results); 
         } catch (error) {
-            console.error("Error fetching joke:", error);
+            console.error("Error fetching jokes:", error);
         }
     };
 
     const handleChange = (e) => {
-        const value = e.target.value
+        const value = e.target.value;
         setInput(value);
-        fetchData(value); 
+        if (value) {
+            fetchData(value); 
+        } else {
+            setResults([]);
+        }
     };
 
     return (
@@ -41,4 +41,4 @@ const SearchBar = ({ setResults }) => {
     );
 };
 
-export default SearchBar; 
+export default SearchBar;

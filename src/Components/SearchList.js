@@ -6,7 +6,7 @@ const SearchList = ({ results }) => {
         <div className='results-list'>
             {results.length > 0 ? (
                 results.map((joke, id) => (
-                    <SearchResultList result={joke} key={id} />
+                    <SearchResultList result={joke.joke} key={id} />
                 ))
             ) : (
                 <div>No jokes found</div>
@@ -16,3 +16,4 @@ const SearchList = ({ results }) => {
 };
 
 export default SearchList;
+

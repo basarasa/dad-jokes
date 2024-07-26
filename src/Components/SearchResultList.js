@@ -1,11 +1,9 @@
 import React from 'react';
 
-
-
-const SearchResultList = ({ results }) => {
+const SearchResultList = ({ result }) => {
     return (
-        <div>{results}</div>
+        <div>{result}</div>
     );
 };
 
-    export default SearchResultList;
+export default SearchResultList;
