@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-
-
+import React from 'react';
+import SearchResultList from './SearchResultList';
 
 const SearchList = ({ results }) => {
     return (
         <div className='results-list'>
             {results.length > 0 ? (
                 results.map((joke, id) => (
-                    <div key={id}>{joke}</div>
+                    <SearchResultList result={joke} key={id} />
                 ))
             ) : (
                 <div>No jokes found</div>
@@ -16,4 +15,4 @@ const SearchList = ({ results }) => {
     );
 };
 
-    export default SearchList;
+export default SearchList;
