@@ -8,8 +8,10 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
          {/*Joke component*/}
            <Jokes/>
+       <Footer />
     </div>
   );
 }
