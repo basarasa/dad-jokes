@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Jokes from './Joke';
-import Search from "./Search.js";
+import SearchBar from "./Components/SearchBar.js";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import SearchList from './Components/SearchList.js';
 
 function App() {
+const [results, setResults] = useState([]);
 
   return (
     <div className="App">
       <Header />
-         {/*Joke component*/}
            <Jokes/>
-           <Search/>
+           <SearchBar setResults={setResults}/>
+           <SearchList results={results}/>
        <Footer />
     </div>
   );
