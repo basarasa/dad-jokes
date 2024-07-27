@@ -13,7 +13,10 @@ const SearchBar = ({ setResults }) => {
                 headers: { Accept: "application/json" },
                 params: { term: keyword, limit: 30 } 
             });
-            setResults(res.data.results); 
+            const filteredResults = res.data.results.filter(joke => 
+                joke.joke.toLowerCase().includes(keyword.toLowerCase())
+            );
+            setResults(filteredResults); 
         } catch (error) {
             console.error("Error fetching jokes:", error);
         }
