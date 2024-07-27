@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaSearch } from 'react-icons/fa'; 
 import axios from 'axios';
+import "./ComponentStyle/SearchBar.css"
 
 const SearchBar = ({ setResults }) => { 
     const [input, setInput] = useState('');
@@ -36,7 +37,7 @@ const SearchBar = ({ setResults }) => {
         <div className="input-wrapper">
             <FaSearch id="search-icon" />
             <input 
-                placeholder="Type to search for joke" 
+                placeholder="Type to search for a joke" 
                 value={input} 
                 onChange={handleChange}
             />     

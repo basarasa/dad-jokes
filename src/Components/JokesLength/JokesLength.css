@@ -1,0 +1,25 @@
+.results-list {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between; 
+    margin-top: 20px; 
+    
+
+}
+
+.results-list > div {
+    flex: 1;
+    margin: 10 10px; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+    width: 40%;
+    background-color: white;
+    box-shadow: 0px 0px 8px #ddd;
+    border-radius: 10px;
+    width: 100%;
+    min-width: 200px;
+
+    
+}

@@ -1,8 +1,9 @@
 import React from 'react';
+import "./ComponentStyle/SearchResultList.css"
 
 const SearchResultList = ({ result }) => {
     return (
-        <div>{result}</div>
+        <div className='search-result-list'>{result}</div>
     );
 };
 

@@ -2,6 +2,7 @@ import React from 'react';
 import ShortJokes from './JokesLength/ShortJokes';
 import MediumJokes from './JokesLength/MediumJokes';
 import LongJokes from './JokesLength/LongJokes';
+import "./ComponentStyle/SearchList.css"
 
 const categorizeJokes = (jokes) => {
     const shortJokes = jokes.filter(joke => joke.joke.split(' ').length < 10);

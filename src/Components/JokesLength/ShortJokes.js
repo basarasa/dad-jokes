@@ -1,9 +1,10 @@
 import React from 'react';
 import SearchResultList from '../SearchResultList';
+import "./JokesLength.css"
 
 const ShortJokes = ({ jokes }) => {
     return (
-        <div>
+        <div className="joke-item">
             <h2>Short Jokes</h2>
             {jokes.length > 0 ? (
                 jokes.map((joke, id) => (

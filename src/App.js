@@ -13,8 +13,10 @@ const [results, setResults] = useState([]);
     <div className="App">
       <Header />
            <Jokes/>
+           <div className="search-bar-container">
            <SearchBar setResults={setResults}/>
            <SearchList results={results}/>
+           </div>
        <Footer />
     </div>
   );
