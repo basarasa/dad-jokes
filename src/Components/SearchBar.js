@@ -11,7 +11,7 @@ const SearchBar = ({ setResults }) => {
         try {
             const res = await axios.get(apiLink, {
                 headers: { Accept: "application/json" },
-                params: { term: keyword, limit: 30 } // Search for the keyword and limit to 30 results
+                params: { term: keyword, limit: 30 } 
             });
             setResults(res.data.results); 
         } catch (error) {
