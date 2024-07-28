@@ -10,10 +10,6 @@ button {
     font-weight: bold;
 }
 
-.joke{
-    margin: 10 10px; 
-    padding: 20px;
-}
 
 button:hover{
   background-color: #fad05e;

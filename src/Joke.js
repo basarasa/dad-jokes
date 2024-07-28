@@ -4,6 +4,7 @@ import "./Joke.css";
 
 const Jokes = () => {
     const [joke, setJoke] = useState('');
+    const [buttonText, setButtonText] = useState('Click Me!');
 
     const apiLink = "https://icanhazdadjoke.com/";
 
@@ -11,13 +12,14 @@ const Jokes = () => {
         try {
         const res = await axios.get(`${apiLink}`, { headers: { Accept: "application/json" } });
         setJoke(res.data.joke);
+        setButtonText('Next One');
     } catch (error) {
         console.error("Error fetching joke:", error);
     }
     };
 return (
   <div className="joke">
-                <button onClick={fetchData}>CLICK ME</button>
+                <button onClick={fetchData}>{buttonText}</button>
             {joke && (
                 <div className="data">
                     {joke}
