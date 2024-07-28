@@ -3,7 +3,7 @@ import { FaSearch } from 'react-icons/fa';
 import axios from 'axios';
 import "./ComponentStyle/SearchBar.css"
 
-const SearchBar = ({ setResults }) => { 
+const SearchBar = ({ setResults, setHasInput }) => { 
     const [input, setInput] = useState('');
 
     const apiLink = "https://icanhazdadjoke.com/search";
@@ -26,6 +26,7 @@ const SearchBar = ({ setResults }) => {
     const handleChange = (e) => {
         const value = e.target.value;
         setInput(value);
+        setHasInput(value.trim() !== '');
         if (value) {
             fetchData(value); 
         } else {

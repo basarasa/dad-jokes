@@ -8,14 +8,15 @@ import SearchList from './Components/SearchList.js';
 
 function App() {
 const [results, setResults] = useState([]);
+const [hasInput, setHasInput] = useState(false);
 
   return (
     <div className="App">
       <Header />
            <Jokes/>
            <div className="search-bar-container">
-           <SearchBar setResults={setResults}/>
-           <SearchList results={results}/>
+           <SearchBar setResults={setResults}  setHasInput={setHasInput}/>
+           <SearchList results={results} hasInput={hasInput}/>
             </div>
        <Footer />
     </div>
@@ -23,3 +24,4 @@ const [results, setResults] = useState([]);
 }
 
 export default App;
+

@@ -12,16 +12,21 @@ const categorizeJokes = (jokes) => {
     return { shortJokes, mediumJokes, longJokes };
 };
 
-const SearchList = ({ results }) => {
+const SearchList = ({ results, hasInput }) => {
     const { shortJokes, mediumJokes, longJokes } = categorizeJokes(results);
 
     return (
         <div className='results-list'>
+            {hasInput && (
+            <>
             <ShortJokes jokes={shortJokes} />
             <MediumJokes jokes={mediumJokes} />
             <LongJokes jokes={longJokes} />
+            </>
+)}
         </div>
     );
 };
 
 export default SearchList;
+
