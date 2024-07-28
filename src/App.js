@@ -16,7 +16,7 @@ const [results, setResults] = useState([]);
            <div className="search-bar-container">
            <SearchBar setResults={setResults}/>
            <SearchList results={results}/>
-           </div>
+            </div>
        <Footer />
     </div>
   );

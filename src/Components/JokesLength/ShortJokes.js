@@ -11,7 +11,7 @@ const ShortJokes = ({ jokes }) => {
                     <SearchResultList result={joke.joke} key={id} />
                 ))
             ) : (
-                <div>No short jokes found</div>
+                <div>No jokes found</div>
             )}
         </div>
     );

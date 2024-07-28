@@ -1,0 +1,32 @@
+button {
+    background-color: #ffffff;
+    width: 15%;
+    border-radius: 10px;
+    height: 2.5rem;
+    box-shadow: 0px 0px 8px #ddd;
+    align-items: center;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.joke{
+    margin: 10 10px; 
+    padding: 20px;
+}
+
+button:hover{
+  background-color: #fad05e;
+}
+
+button:active{
+  background-color:  #ffe8a7;
+}
+
+.data{
+  border-radius: 10px;
+  height: 2.5rem;
+  font-size: 1.25rem;
+  padding: 30px;
+  margin-bottom: 10px;
+}

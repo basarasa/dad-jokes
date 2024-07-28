@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import "./Joke.css";
 
 const Jokes = () => {
     const [joke, setJoke] = useState('');
@@ -15,12 +16,8 @@ const Jokes = () => {
     }
     };
 return (
-  <div className="joke__">
-            <h1>Jokes:</h1>
-               {/*Fetch data from url*/}
-                <button onClick={fetchData}>Give me a Dad joke</button>
-
-              {/* Display the joke */}
+  <div className="joke">
+                <button onClick={fetchData}>CLICK ME</button>
             {joke && (
                 <div className="data">
                     {joke}
