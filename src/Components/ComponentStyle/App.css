@@ -3,20 +3,20 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
 }
 
 .search-bar-container{
-  position: fixed;
-  top: 45%; 
-  left: 50%; 
-  transform: translateX(-50%);
+  position:  sticky;
   width: 80%;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
   align-items: center;
   min-width: 300px;
+  z-index: 1000; 
+  margin: 150px auto; 
+  background-color: #eee;
 }
 
 
@@ -34,7 +34,6 @@ header {
   background-color: #f5ba13;
   padding: 50px;
   margin-bottom: 5vb;
-
 }
 
 header h1 {
@@ -55,7 +54,6 @@ footer {
   padding: 7px;
   background-color: #eee;
   font-size: 0.9rem;
-
 }
 
 

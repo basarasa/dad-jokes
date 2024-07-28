@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import './Components/ComponentStyle/App.css';
 import Jokes from './Joke';
 import SearchBar from "./Components/SearchBar.js";
 import Header from "./Components/Header";

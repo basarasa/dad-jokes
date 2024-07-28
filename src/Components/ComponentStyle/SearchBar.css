@@ -1,14 +1,13 @@
 .input-wrapper{
     background-color: white;
-    width: 40%;
+    width: 400px;
     border-radius: 10px;
     height: 2.5rem;
     padding: 0, 15px;
     box-shadow: 0px 0px 8px #ddd;
     display: flex;
     align-items: center;
-    padding-left: 10px;
-    
+    padding-left: 10px; 
 }
 
 input{
@@ -25,5 +24,5 @@ input:focus{
 }
 
 #search-icon{
-    color: #a17a0d;
+    color: #f5ba13;
 }

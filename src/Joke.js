@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import "./Joke.css";
+import "./Components/ComponentStyle/Joke.css";
 
 const Jokes = () => {
     const [joke, setJoke] = useState('');

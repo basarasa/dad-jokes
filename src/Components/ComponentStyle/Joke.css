@@ -1,6 +1,7 @@
+
 button {
     background-color:#ffda74;
-    width: 15%;
+    width: 150px;
     border-radius: 10px;
     height: 2.5rem;
     box-shadow: 0px 0px 8px #ddd;
@@ -40,9 +41,7 @@ button:active{
   flex-direction: column;
   align-items: center;
   min-width: 300px;
-
   padding: 20px; 
-
 }
 
 

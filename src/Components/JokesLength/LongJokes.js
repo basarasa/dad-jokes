@@ -12,7 +12,7 @@ const LongJokes = ({ jokes }) => {
                     <SearchResultList result={joke.joke} key={id} />
                 ))
             ) : (
-                <div>No jokes found</div>
+                <div className="no-jokes">No jokes found</div>
             )}
         </div>
     );
